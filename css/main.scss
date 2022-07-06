@@ -1,0 +1,24 @@
+// google fonts 
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Indie+Flower&family=Inter&family=Pacifico&family=Poppins:ital,wght@0,100;1,300&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300;400&display=swap');
+// global rulse
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+// vars
+:root {
+    --body-color:#FBE0C3;
+    --slidebar-colo:#FFBB98;
+    --primary-color:#7D8E95;
+    --toggle-colr:#344648;
+}
