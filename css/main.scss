@@ -22,3 +22,13 @@ a {
     --primary-color:#7D8E95;
     --toggle-colr:#344648;
 }
+/*start main section */
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+/*end main section */
