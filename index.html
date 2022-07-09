@@ -18,10 +18,14 @@
     <title>writing game</title>
 </head>
 <body>
+    <!-- <span class="icon-volume"></span>
+            <span class="icon-volume1"></span>
+                <span class="icon-keyboard"></span> -->
     <!-- start main section -->
-    <section class="container">
+    <section class="container main-section">
         <aside>
-            <button class="sittings">sittings</button>
+            <button class="sittings-btn"><span class="icon-adjustments"></span></button>
+            <h2 class="user-name">user name</h2>
             <h2 class="best-score">best score</h2>
         </aside>
         <article>
@@ -32,14 +36,30 @@
                 <div class="first-line"></div>
                 <div class="second-line"></div>
                 <div class="third-line"></div>
+                <div class="space-btn"></div>
             </div>
         </article>
         <div class="status">
-            <h2 class="time-left">time left :</h2>
-            <h2 class="score">score :</h2>
+            <h2 class="time-left">time left </h2>
+            <h2 class="score">score </h2>
         </div>
     </section>
     <!-- end main section -->
+    <section class="sittings-section">
+        <article>
+            <h2 class="difficulty">difficulty <span class="icon-circle-down"></span></h2>
+            <div>
+                <span>easy</span>
+                <span>medium</span>
+                <span>hard</span>
+            </div>
+            <h2 class="sound">sound <span class="icon-circle-down"></span></h2>
+            <div>
+                <span>keyboard sound</span>
+                <span>game sound</span>
+            </div>
+        </article>
+    </section>
 
     <!-- bootstrap js file -->
     <script src="js/bootstrap.bundle.min.js"></script>

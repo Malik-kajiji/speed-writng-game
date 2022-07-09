@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?bc8nou');
-  src:  url('fonts/icomoon.eot?bc8nou#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?bc8nou') format('truetype'),
-    url('fonts/icomoon.woff?bc8nou') format('woff'),
-    url('fonts/icomoon.svg?bc8nou#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?dgfq2v');
+  src:  url('fonts/icomoon.eot?dgfq2v#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dgfq2v') format('truetype'),
+    url('fonts/icomoon.woff?dgfq2v') format('woff'),
+    url('fonts/icomoon.svg?dgfq2v#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,33 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-search:before {
-  content: "\e90a";
+.icon-adjustments:before {
+  content: "\e01d";
 }
-.icon-location_off:before {
-  content: "\e904";
+.icon-gears:before {
+  content: "\e02b";
 }
-.icon-location_on:before {
-  content: "\e905";
+.icon-volume:before {
+  content: "\e900";
 }
-.icon-brightness_low:before {
+.icon-volume1:before {
+  content: "\e901";
+}
+.icon-keyboard:before {
   content: "\e902";
 }
-.icon-brightness_3:before {
-  content: "\e903";
-}
-.icon-thermometer:before {
-  content: "\e906";
-}
-.icon-cloud-wind:before {
-  content: "\e907";
-}
-.icon-brightness_3:before {
-  content: "\e903";
-}
-.icon-thermometer:before {
-  content: "\e906";
-}
-.icon-triangle-right:before {
-  content: "\e909";
+.icon-circle-down:before {
+  content: "\ea43";
 }
