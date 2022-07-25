@@ -15,15 +15,17 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- main HTML-->
-    <title>writing game</title>
+    <title>speed writing game</title>
 </head>
 <body>
+    <!-- wavy background -->
+    <div class="waving"></div>
     <!-- start main section -->
     <section class="container main-section">
         <aside>
             <button class="sittings-btn"><span class="icon-adjustments"></span></button>
-            <h2 class="user-name">user name</h2>
-            <h2 class="best-score">best score</h2>
+            <h2 class="user-name">user name <p></p></h2>
+            <h2 class="best-score">best score <p></p></h2>
         </aside>
         <article>
             <h2 class="word"></h2>
@@ -39,18 +41,27 @@
             </div>
         </article>
         <div class="status">
-            <h2 class="time-left">time left </h2>
-            <h2 class="score">score </h2>
+            <h2 class="time-left">time left<p></p></h2>
+            <h2 class="score">score <p></p></h2>
         </div>
     </section>
     <!-- end main section -->
+    <!-- start first time playing section -->
+    <section class="first-time">
+        <article>
+            <input type="text" class="username" placeholder="username">
+            <button class="username-btn">Done</button>
+        </article>
+    </section>
+    <!-- end first time playing section -->
+    <!-- start settings section  -->
     <section class="sittings-section">
         <article>
             <h2 class="difficulty">difficulty 
                 <span class="icon-circle-down"></span>
             </h2>
             <div>
-                <span>easy</span>
+                <span class="chosen">easy</span>
                 <span>medium</span>
                 <span>hard</span>
             </div>
@@ -58,22 +69,42 @@
                 <span class="icon-circle-down"></span>
             </h2>
             <div>
-                <span>keyboard sound
+                <span class="sound-span">keyboard sound
                     <span class="icon-volume"></span>
                     <span class="icon-volume1"></span>
                 </span>
-                <span>game sound 
+                <span class="sound-span">game sound 
                     <span class="icon-volume"></span>
                     <span class="icon-volume1"></span>
                 </span>
-                <span>background music 
+                <span class="sound-span">background music 
                     <span class="icon-volume"></span>
                     <span class="icon-volume1"></span>
                 </span>
             </div>
+            <h2 class="clear-data">Claer data</h2>
         </article>
     </section>
-
+    <!-- end settings section  -->
+    <!-- start game over sectoin -->
+    <section class="game-over">
+        <article>
+            <h2>game over</h2> 
+            <p class="score"></p>
+            <div class="btns">
+                <button class="close-window"> Close window </button>
+                <button class="play-again"> Play again </button>
+            </div>
+        </article>
+    </section>
+    <!-- end game over sectoin -->
+    <!-- sounds section -->
+    <audio class="success-sound" src="sounds/success.mp3" preload="auto"></audio>
+    <audio class="end-game-sound" src="sounds/end game sound.mp3" preload="auto"></audio>
+    <audio class="new-best-score-sound" src="sounds/new best score.mp3" preload="auto"></audio>
+    <audio class="fail-sound" src="sounds/fail.mp3" preload="auto"></audio>
+    <audio class="background-music" src="sounds/background music0.mp3" preload="auto"></audio>
+    <!-- sounds section -->
     <!-- bootstrap js file -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- main js -->
