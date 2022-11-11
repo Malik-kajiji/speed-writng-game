@@ -23,7 +23,7 @@
     <!-- start main section -->
     <section class="container main-section">
         <aside>
-            <button class="sittings-btn"><span class="icon-adjustments"></span></button>
+            <button class="sittings-btn">.<span class="icon-adjustments"></span></button>
             <h2 class="user-name">user name <p></p></h2>
             <h2 class="best-score">best score <p></p></h2>
         </aside>
@@ -32,7 +32,8 @@
             <button class="start-btn">
                 <span>start</span>
             </button>
-            <input type="text" class="word-input">
+            <input type="text" class="word-input" id="word-input">
+            <label for="word-input" style="opacity: 0;"> word </label> <!--for accessibility-->
             <div class="keyboard">
                 <div class="first-line"></div>
                 <div class="second-line"></div>
@@ -97,14 +98,23 @@
             </div>
         </article>
     </section>
-    <!-- end game over sectoin -->
-    <!-- sounds section -->
+    <!-- end game over section -->
+    <!-- start footer -->
+    <footer class="container">
+        <div class="footer-content">
+            <p> Designed by <span>Malik Kajiji</span></p>
+            <p class="email"> contact@malikkajiji.online </p>
+            <p>copy</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- sounds  -->
     <audio class="success-sound" src="sounds/success.mp3" preload="auto"></audio>
     <audio class="end-game-sound" src="sounds/end game sound.mp3" preload="auto"></audio>
     <audio class="new-best-score-sound" src="sounds/new best score.mp3" preload="auto"></audio>
     <audio class="fail-sound" src="sounds/fail.mp3" preload="auto"></audio>
     <audio class="background-music" src="sounds/background music0.mp3" preload="auto"></audio>
-    <!-- sounds section -->
+    <!-- sounds  -->
     <!-- bootstrap js file -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- main js -->

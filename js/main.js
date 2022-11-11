@@ -29,6 +29,8 @@ let SuccessSound = document.querySelector(".success-sound");
 let EndGameSound = document.querySelector(".end-game-sound");
 let BackGroundMusic = document.querySelector(".background-music");
     BackGroundMusic.volume = 0.3;
+let FooterTxt = document.querySelector(".email");
+let CopyTxt = document.querySelector(".email+p");
 
 // create the keyboard
 
@@ -449,3 +451,12 @@ function ResestTheGame(){
         GetDate();
     }, 4000);
 }
+
+// footer 
+FooterTxt.addEventListener('click',()=>{
+    navigator.clipboard.writeText("contact@malikkajiji.online");
+    CopyTxt.innerHTML = "copied";
+    setTimeout(() => {
+        CopyTxt.innerHTML = "copy";
+    }, 3000);
+})

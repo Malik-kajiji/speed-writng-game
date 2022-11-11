@@ -32,6 +32,8 @@ button,input {
 
 body {
     background-color: var(--body-color);
+    height: fit-content;
+    overflow-x: hidden;
 }
   /* start wavy background */
 .waving{
@@ -112,6 +114,8 @@ body {
         }
     }
     article {
+        height: 80vh;
+        position: relative;
         width: 70%;
         display: flex;
         flex-direction: column;
@@ -185,8 +189,9 @@ body {
         }
         @media(min-width:1400px){
         .keyboard {
+            position: absolute;
+            top: 450px;
             width: 100%;
-            height: 500px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -246,8 +251,9 @@ body {
 }
 @media(max-width:1400px){
     .keyboard  {
+            position: absolute;
+            top: 450px;
             width: 100%;
-            height: 500px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -277,11 +283,9 @@ body {
 @media (max-width:1200px){
     .main-section {
         width: 100%;
-        height: 100vh;
         position: relative;
         display: flex;
         justify-content: space-between;
-        padding-top: 50px;
         aside {
             h2 {
                 font-size: 20px;
@@ -350,6 +354,9 @@ body {
             width: 600px;
         }
         .status {
+            position: absolute;
+            top: 700px;
+            height: 80px;
             flex-direction: row;
             width: 600px;
             h2 {
@@ -362,7 +369,7 @@ body {
         }
         article {
             .word {
-                transform: translate(60px,-100px);
+                transform: translate(60px,100px);
             }
             .start-btn {
                 transform: translate(60px,100px);
@@ -594,3 +601,47 @@ body {
     }
 }
 /*end game over sectoin*/
+// footer section 
+footer {
+    position: relative;
+    z-index: 40;
+    height: 100px;
+    top: 10vh;
+    width: 100%;
+    border-top: 3px solid #fff;
+    .footer-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-size: 20px;
+            display: block;
+            color: var(--text-color);
+            transform: translateX(-12px);
+        }
+        .email {
+            cursor: pointer;
+            +p {
+                transition: var(--hover-trans);
+                opacity: 0;
+                position: absolute;
+                top: -20px;
+                right: 80px;
+                content: 'copy';
+                background-color: rgba($color: #000000, $alpha: 0.6);
+                padding: 5px 15px;
+                height: 50px;
+                text-align: center;
+                border-radius: 8px;
+                clip-path: polygon(0 0, 100% 0, 100% 79%, 47% 79%, 33% 100%, 20% 76%, 0 76%);
+            }
+            &:hover+p{
+                opacity: 1;
+            }
+        }
+    }
+}
+// footer section 
